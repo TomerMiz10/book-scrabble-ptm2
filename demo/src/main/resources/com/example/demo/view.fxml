@@ -8,19 +8,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
    <center>
       <VBox alignment="CENTER" prefHeight="605.0" prefWidth="745.0" spacing="20.0">
           <padding>
               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
           </padding>
-          <Button onAction="#onHelloButtonClick" prefWidth="200.0" text="Play local ">
+          <Button onAction="#playLocal" prefWidth="200.0" text="Play local ">
             <font>
                <Font size="20.0" />
             </font>
          </Button>
-         <Button minWidth="200.0" onAction="#onHelloButtonClick" text="Play In Guest Mode" textAlignment="CENTER">
+         <Button minWidth="200.0" onAction="#guestMode" text="Play In Guest Mode" textAlignment="CENTER">
             <opaqueInsets>
                <Insets />
             </opaqueInsets>
