@@ -1,4 +1,4 @@
-package com.example.demo;
+package view;
 
 
 import javafx.application.Application;

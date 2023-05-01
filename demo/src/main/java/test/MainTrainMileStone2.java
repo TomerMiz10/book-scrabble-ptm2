@@ -1,6 +1,8 @@
-package com.example.demo;
+package test;
 
-public class MainTrain1 {
+import view.Server;
+
+public class MainTrainMileStone2 {
     //server test
     public static void serverAndClientTest(){
         Server server = new Server();
@@ -8,6 +10,7 @@ public class MainTrain1 {
         thread.start();
         server.connectClient();
     }
+
     //buttons test
     public static void buttonsTest(){
 

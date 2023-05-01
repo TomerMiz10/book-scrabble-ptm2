@@ -10,7 +10,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/19"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.demo.Controller">
+            fx:controller="view.Controller">
    <center>
       <VBox alignment="CENTER" onDragDetected="#settings" prefHeight="605.0" prefWidth="745.0" spacing="20.0">
           <padding>

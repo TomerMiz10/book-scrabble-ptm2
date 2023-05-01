@@ -5,25 +5,34 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
             xmlns="http://javafx.com/javafx/19"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.demo.Controller">
-   <center>
-      <Button mnemonicParsing="false" text="Play" BorderPane.alignment="CENTER">
-         <font>
-            <Font size="50.0" />
-         </font>
+            fx:controller="view.Controller">
+   <left>
+      <Button mnemonicParsing="false" onAction="#serverAndClientTest" text="Server Check" BorderPane.alignment="CENTER">
          <BorderPane.margin>
-            <Insets bottom="40.0" />
+            <Insets bottom="20.0" left="20.0" />
          </BorderPane.margin>
+         <font>
+            <Font size="35.0" />
+         </font>
       </Button>
-   </center>
+   </left>
+   <right>
+      <Button mnemonicParsing="false" text="communication" BorderPane.alignment="CENTER_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="20.0" right="20.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </right>
    <top>
       <Button mnemonicParsing="false" onAction="#switchToHomeScreen" text="Back" BorderPane.alignment="TOP_RIGHT">
          <BorderPane.margin>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            <Insets right="20.0" top="20.0" />
          </BorderPane.margin>
       </Button>
    </top>
