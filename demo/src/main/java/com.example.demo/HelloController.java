@@ -31,8 +31,8 @@ public class HelloController {
         stage.setScene(scene);
         stage.show();
     }
-    public void switchToNetAndCom(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Network&communication.fxml"));
+    public void settings(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Settings.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -52,6 +52,9 @@ public class HelloController {
         stage.setScene(scene);
         stage.show();
     }
-
+    public void serverAndClientTest(){
+        Server server = new Server();
+        server.connectClient();
+    }
 
 }
