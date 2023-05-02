@@ -1,4 +1,4 @@
-package com.example.demo;
+package view;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -13,7 +13,7 @@ public class Server extends Thread {
         super.run();
         connectServer();
     }
-
+    //server connection
     public void connectServer(){
         try {
             // Create a new server socket and bind it to port 8000
@@ -43,7 +43,7 @@ public class Server extends Thread {
             e.printStackTrace();
         }
     }
-
+    //client connection
     public void connectClient(){
         try {
             // Connect to the server on port 8000
