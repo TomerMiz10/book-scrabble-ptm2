@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.logical.MyServer;
 
 import java.io.IOException;
 
@@ -13,7 +14,6 @@ public class Controller {
 
     private Stage stage;
     private Scene scene;
-    private Parent root;
 
     //FXML layers for the buttons.
     public void playLocal(ActionEvent event) throws IOException {
@@ -50,5 +50,7 @@ public class Controller {
         Server server = new Server();
         server.connectClient();
     }
+
+
 
 }
